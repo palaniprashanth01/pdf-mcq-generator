@@ -1,5 +1,5 @@
-transformers
-gradio
-rake-nltk
-pymupdf
-nltk
+transformers>=4.36.0
+gradio>=4.19.0
+rake-nltk>=1.0.6
+pymupdf>=1.22.5
+nltk>=3.8.1
