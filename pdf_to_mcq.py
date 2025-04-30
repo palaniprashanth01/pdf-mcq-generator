@@ -1,2 +1,2 @@
-# Paste your entire script here (from !pip install to iface.launch)
-# For brevity, I'll assume you've done this.
+# Paste your script, removing lines like:
+# print("Debug: loaded model") or # TODO: fix this
