@@ -1,7 +1,17 @@
-*.pyc
+# Python
 __pycache__/
-.ipynb_checkpoints/
-*.ipynb
-*.pdf
-.venv/
-venv/
+*.py[cod]
+*.so
+*.ipynb_checkpoints
+
+# Environment files
+.env
+*.env
+
+# Colab
+.sample_data/
+.config/
+
+# OS
+.DS_Store
+Thumbs.db

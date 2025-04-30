@@ -1,21 +1,31 @@
 # PDF to MCQ Generator
 
-A Python application that generates multiple-choice questions (MCQs) from PDF documents using natural language processing (NLP). This tool extracts text, summarizes content, and creates MCQs aligned with Bloom's Taxonomy, providing an interactive user interface.
+A Gradio-based web app that generates multiple-choice questions (MCQs) from any uploaded PDF file. It summarizes the content using BART, extracts keywords using RAKE, and forms Bloom's Taxonomy-based questions with randomized options.
 
-## Project Goal
-To automate the creation of educational MCQs from PDF documents, leveraging NLP to extract key concepts and generate diverse questions. This project demonstrates proficiency in Python, NLP libraries, and web interfaces.
+## Features
 
-## Technologies Used
-- **Python**: Core programming language.
-- **Transformers**: For text summarization using BART (`facebook/bart-large-cnn`).
-- **RAKE-NLTK**: For keyword extraction.
-- **PyMuPDF**: For PDF text extraction.
-- **Gradio**: For building an interactive web interface.
-- **NLTK**: For text processing.
-- **Git**: For version control.
-- **Google Colab**: For development and testing.
+- Upload a PDF and specify a topic
+- Choose how many MCQs to generate (5–30)
+- Summarizes text, extracts keywords, and generates MCQs
+- Gradio interface for easy interaction
 
-## Installation
-```bash
-pip install -r requirements.txt
-python -m nltk.downloader punkt stopwords punkt_tab wordnet
+## Tech Stack
+
+- Python
+- Gradio
+- HuggingFace Transformers (BART)
+- RAKE-NLTK
+- PyMuPDF for PDF text extraction
+
+## How to Run (Colab)
+
+1. Clone the repo or copy the code into a Google Colab notebook
+2. Install requirements:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the notebook and launch the Gradio app
+
+## License
+
+MIT License
